@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+}
+  
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: #1F2039;
+}
+
+.contenu_accueil{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+    align-items: center;
+    max-width: 850px;
+    margin: auto;
+}
+
+.contenu_accueil img{
+    width: 425px;
+    height: 425px;
+    border-radius: 15px;
+}
+
+.contenu_accueil h1{
+    color: #A4A6B1;
+    font-size: 3.5em;
+}
+
+.contenu_accueil p{
+    color: white;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+header{
+    padding: 20px 50px;
+}
