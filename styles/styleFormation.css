@@ -49,32 +49,6 @@ h1{
     margin-bottom: 30px;
 }
 
-.contenu_accueil{
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 50px;
-    align-items: center;
-    max-width: 850px;
-    margin: auto;
-}
-
-.contenu_accueil img{
-    width: 425px;
-    height: 425px;
-    border-radius: 15px;
-}
-
-.contenu_accueil p{
-    color: white;
-    font-size: 1.3em;
-    text-align: justify;
-    padding-right: 60px;
-    padding-bottom: 60px;
-    border-right: #A4A6B1 solid 1px;
-    border-bottom: #A4A6B1 solid 1px;
-    border-bottom-right-radius: 15px;
-}
-
 .titreOnglet{
     margin-left: 100px;
 }
