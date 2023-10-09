@@ -22,6 +22,7 @@ header a{
     color: #1F2039;
     text-decoration: none;
     padding: 10px 70px;
+    font-weight: 600;
 }
 
 .boutonGauche{
@@ -42,6 +43,12 @@ footer{
     height: 40px;
 }
 
+h1{
+    color: #A4A6B1;
+    font-size: 3.5em;
+    margin-bottom: 30px;
+}
+
 .contenu_accueil{
     display: flex;
     flex-direction: row-reverse;
@@ -57,12 +64,6 @@ footer{
     border-radius: 15px;
 }
 
-.contenu_accueil h1{
-    color: #A4A6B1;
-    font-size: 3.5em;
-    margin-bottom: 30px;
-}
-
 .contenu_accueil p{
     color: white;
     font-size: 1.3em;
@@ -74,3 +75,94 @@ footer{
     border-bottom-right-radius: 15px;
 }
 
+.titreOnglet{
+    margin-left: 100px;
+}
+
+.frise{
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 60px;
+    overflow: auto;
+}
+
+.frise:after{
+    content: "";
+    position: absolute;
+    left: 35px;
+    right: 35px;
+    top: 50%;
+    height: 8px;
+    background: #A4A6B1;
+    border-radius: 3px;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.frise article{
+    display: inline-block;
+    position: relative;
+    background: #A4A6B1;
+    width: auto;
+    height: 75px;
+    padding: 10px;
+    margin: 0 0 50px 80px;
+    vertical-align: top;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.frise article:not(:first-child){
+    margin-left: -20px;
+}
+
+.frise article:not(:last-child){
+    margin-right: -20px;
+}
+
+.frise article:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc( 100% + 14px );
+    left: 50%;
+    background: #A4A6B1;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.frise article:after {
+    content: "";
+    position: absolute;
+    top: calc( 100% - 10px );
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 20px solid #A4A6B1;
+    transform: translateX(-50%);
+}
+  
+.frise article:nth-child(even) {
+    margin-top: 140px;
+    margin-bottom: 0;
+}
+
+.frise article:nth-child(even):before {
+    top: auto;
+    bottom: calc( 100% + 14px );
+}
+
+.frise article:nth-child(even):after {
+    top: -10px;
+    bottom: 100%;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 20px solid #A4A6B1;
+    border-top: none;
+}
