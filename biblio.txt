@@ -1,2 +1,7 @@
 openclassrooms
 https://www.codeur.com/tuto/css/timeline-en-html-css/#timeline_horizontale
+
+
+plus loin : 
+responsive
++ d'animation / interactivité

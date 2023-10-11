@@ -25,6 +25,11 @@ header a{
     font-weight: 600;
 }
 
+a{
+    text-decoration: none;
+    color: #1F2039;
+}
+
 .boutonGauche{
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;

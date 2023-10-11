@@ -86,6 +86,7 @@ input[type='text']::placeholder,
 input[type='email']::placeholder {
     color: #1F2039;
     opacity: 50%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 button {
